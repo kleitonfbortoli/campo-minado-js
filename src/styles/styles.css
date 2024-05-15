@@ -1,0 +1,63 @@
+body {
+    background-color: azure;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+#main {
+    width: calc(100vw - 2rem);
+    height: calc(100vh - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+    #form {
+        display: flex;
+        gap: 1.5rem;
+
+        #reload {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            background-color: burlywood;
+        }
+
+        #reload:hover {
+            background-color: antiquewhite;
+        }
+    }
+
+    #output {
+        background-color: antiquewhite;
+        padding: 0.5rem;
+        display: grid;
+        max-height: 80%;
+        max-width: 80%;
+        gap: 0.20rem;
+    }
+}
+
+.label-container {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.field {
+    background-color: antiquewhite;
+    min-width: 2rem;
+    min-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.closed {
+    background-color: burlywood;
+}
+
+.closed:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
